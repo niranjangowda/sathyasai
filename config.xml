@@ -1,8 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>sathyasai-notification</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="com.sathyasai.intexom" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sathya Sai España</name>
+    <description>
+    Aplicación informativa acerca de la organización sathya sai de españa.
+    Asi mismo ampliamos la visión aportando más información acerca de eventos,
+    noticias de la organización sathya sai por el mundo.
+     </description>
+    <author email="soporte@intexom.org" href="http://intexom.org">Intexom Data Systems Pvt Ltd</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -81,4 +85,9 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.4.2" />
+    <allow-navigation href="http://192.168.0.144:8100" />
+    <allow-navigation href="http://192.168.43.254:8100" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.1" />
+    <engine name="android" spec="6.4.0" />
 </widget>

@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons>              
+    </ion-buttons>
+    <ion-title>{{post.title.rendered | uppercase}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<!-- <ion-title>{{post.title.rendered | uppercase}}</ion-title> -->
+  <ion-card>
+    <!-- <ion-card-title>{{post.title.rendered}}</ion-card-title> -->
+    <img [src]="post.better_featured_image.source_url" alt="post.title.rendered">
+</ion-card>
+
+<h3 padding>{{post.title.rendered | uppercase}}</h3>
+
+<ion-textarea [innerHTML]="post.content.rendered" padding></ion-textarea>
+
+<!-- <hr>
+<ion-item-divider text-center style="color: red;font-size: 25px;">Comments</ion-item-divider>
+
+<ion-list *ngFor="let comment of comments" >
+<ion-item>
+  <h3 [innerHTML]="comment.content.rendered"></h3>
+</ion-item>
+</ion-list> -->
+
+<ion-fab top right edge>
+  <button ion-fab mini color="danger"><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab (click)="shareOnSocialMedia(post)"><ion-icon name="logo-whatsapp"></ion-icon></button>      
+    </ion-fab-list>
+</ion-fab>
+
+</ion-content>
