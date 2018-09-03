@@ -56,5 +56,8 @@ isPostsDataAvailable: boolean = false;
 
   searchPosts(event: Event,query: string) {
     this.navCtrl.push('SearchPage', {query: query})
+    // this.navCtrl.push('SearchPage', {query: query})
   }
 }
+
+//Added the git implementation
